@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="自己紹介スライド（Web版）" />
+  </head>
+
+  <body>
+    <!-- Collage Background (decor only) -->
+    <div class="bg-collage" aria-hidden="true">
+      <span class="tile t1"></span>
+      <span class="tile t2"></span>
+      <span class="tile t3"></span>
+      <span class="tile t4"></span>
+      <span class="tile t5"></span>
+      <span class="tile t6"></span>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <span class="rect r1"></span>
+      <span class="rect r2"></span>
+      <span class="rect r3"></span>
+      <span class="rect r4"></span>
+    </div>
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="#top" class="brand">Mizuho Kuroki</a>
+        <nav class="links">
+          <a href="#top">Top</a>
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#build">Build</a>
+          <a href="#intern">Intern</a>
+          <!-- <a href="#stack">Stack</a> -->
+        </nav>
+      </div>
+    </header>
+
+    <main class="deck">
+      <!-- Slide 1 (Top) -->
+      <section class="slide hero hero-pin hero-split" id="top">
+        <div class="hero-copy card hero-card">
+          <h1 class="hero-title">Welcome to <br />My Profile</h1>
+          <p class="hero-sub">
+            Mizuho Kuroki<br />
+            Graduate School of Information Science and Electrical Engineering
+          </p>
+          <div class="corner-decor" aria-hidden="true">
+            <span class="corner-lines"></span>
+            <span class="corner-hatch"></span>
+          </div>
+        </div>
+
+        <div class="hero-frame">
+          <div
+            class="hero-bg"
+            style="background-image: url('img/my_face.JPG')"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Slide 2 -->
+      <section class="slide" id="about">
+        <div class="grid-2">
+          <div class="card">
+            <h2 class="section-title">自己紹介</h2>
+
+            <dl class="profile-dl">
+              <dt>名前</dt>
+              <dd>黒木 瑞穂（くろき みづほ）</dd>
+
+              <dt>年齢</dt>
+              <dd>24歳</dd>
+
+              <dt>出身</dt>
+              <dd>鹿児島県 鹿児島市</dd>
+
+              <dt>学歴</dt>
+              <dd>
+                <ul class="profile-list">
+                  <li>鹿児島県立甲南高等学校 卒業</li>
+                  <li>鹿児島大学 工学部先進システム工学科</li>
+                  <li>九州大学大学院 システム情報科学府情報理工学専攻</li>
+                </ul>
+              </dd>
+
+              <dt>研究室</dt>
+              <dd>
+                <a
+                  href="https://app.ait.kyushu-u.ac.jp/"
+                  target="_blank"
+                  rel="noopener"
+                  class="lab-link"
+                >
+                  ヒューマノフィリックシステム研究室（荒川 豊 教授）
+                  <span class="lab-link-icon">↗</span>
+                </a>
+              </dd>
+              <dt>技術スタック</dt>
+              <dd>
+                <div class="stack-inline">
+                  <div class="stack-row">
+                    <span class="chip">Python</span>
+                    <span class="chip">C++</span>
+                    <!-- <span class="chip">JavaScript</span> -->
+                    <!-- <span class="chip">Swift</span> -->
+                    <span class="chip">Arduino</span>
+                  </div>
+
+                  <div class="stack-row">
+                    <span class="chip">TensorFlow</span>
+                    <span class="chip">NumPy</span>
+                    <span class="chip">Matplotlib</span>
+                    <span class="chip">Git/GitHub</span>
+                    <span class="chip">ESP32</span>
+                    <!-- <span class="chip">HTTP/API連携</span> -->
+                  </div>
+                </div>
+              </dd>
+
+              <dt>実験・評価</dt>
+              <dd>
+                <div class="stack-inline">
+                  <div class="stack-row">
+                    <span class="chip">Accuracy</span>
+                    <span class="chip">Precision</span>
+                    <span class="chip">Recall</span>
+                    <span class="chip">F1-score</span>
+                    <span class="chip">Confusion Matrix</span>
+                  </div>
+                </div>
+              </dd>
+
+              <dt>MBTI</dt>
+              <dd>ENTP - 討論者タイプ</dd>
+
+              <dt>座右の銘</dt>
+              <dd>ケセラセラ〜なんとかなる〜</dd>
+
+              <dt>好きなマンガ</dt>
+              <dd>進撃の巨人，ワンピース，BLEACH，etc</dd>
+
+              <dt>アルバイト</dt>
+              <dd>ミスタードーナツ・家庭教師・派遣・居酒屋</dd>
+            </dl>
+          </div>
+
+          <div class="card">
+            <h2 class="section-title">趣味・特技</h2>
+
+            <figure class="hobby-item baseball">
+              <img
+                src="img/baseball.JPG"
+                alt="左打ちです！広角にヒットを打つのが得意です"
+                data-lightbox
+                data-gallery="baseball"
+                data-full="img/baseball.JPG"
+              />
+              <figcaption>野球・ソフトボール（12年）</figcaption>
+            </figure>
+
+            <img
+              src="img/baseball2.JPG"
+              alt="ソフトから高校野球までずっと投手してました！！"
+              data-lightbox
+              data-gallery="baseball"
+              data-full="img/baseball2.JPG"
+              hidden
+            />
+            <img
+              src="img/baseball3.JPG"
+              alt="ネクストバッターズサークルではルーティンは欠かしません！！"
+              data-lightbox
+              data-gallery="baseball"
+              data-full="img/baseball3.JPG"
+              hidden
+            />
+
+            <figure class="hobby-item coffee" style="margin-top: 18px">
+              <img
+                src="img/coffee.JPG"
+                alt="アフォガード！"
+                data-lightbox
+                data-gallery="coffee"
+                data-full="img/coffee.JPG"
+              />
+              <figcaption>コーヒー・カフェ巡り</figcaption>
+            </figure>
+
+            <img
+              src="img/coffee2.JPG"
+              alt="コーヒーとチーズケーキ！"
+              data-lightbox
+              data-gallery="coffee"
+              data-full="img/coffee2.JPG"
+              hidden
+            />
+            <img
+              src="img/coffee3.JPG"
+              alt="落ち着く地元のお気に入りカフェ！"
+              data-lightbox
+              data-gallery="coffee"
+              data-full="img/coffee3.JPG"
+              hidden
+            />
+
+            <figure class="hobby-item m" style="margin-top: 18px">
+              <img
+                src="img/m.png"
+                alt="お笑い鑑賞"
+                data-lightbox
+                data-gallery="m"
+                data-full="img/m.png"
+              />
+              <figcaption>お笑い鑑賞</figcaption>
+            </figure>
+
+            <img
+              src="img/m3.png"
+              alt="ナイツ"
+              data-lightbox
+              data-gallery="m"
+              data-full="img/m3.png"
+              hidden
+            />
+            <img
+              src="img/m2.png"
+              alt="有吉弘行"
+              data-lightbox
+              data-gallery="m"
+              data-full="img/m2.png"
+              hidden
+            />
+            <img
+              src="img/m1.png"
+              alt="くりぃむしちゅー"
+              data-lightbox
+              data-gallery="m"
+              data-full="img/m1.png"
+              hidden
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 4 : Research -->
+      <!-- <section class="slide" id="research">
+        <div class="card">
+          <h2>Research</h2>
+
+          <div class="research-list">
+            <div class="research-item" data-acc>
+              <button class="research-head" type="button" data-acc-btn>
+                <div class="research-item-title">
+                  修士研究：生成AIにおけるグラフィックレコーディングの「非言語情報の解釈能力」評価
+                </div>
+                <div class="research-item-desc">
+                  矢印・囲み・配置・アイコンなどの非言語要素に注目し、生成AIがどこで誤解するかを実験で切り分けます。
+                </div>
+              </button>
+
+              <div class="research-detail" data-acc-panel>
+                <div class="research-two-col">
+                  <div class="research-text">
+                    <p>
+                      <br />
+                      <strong>
+                        グラフィックレコードから構成要素を分解し，生成AIの内容理解における非言語情報の寄与を評価するアブレーションスタディ
+                      </strong>
+                    </p>
+                    <p>
+                      グラフィックレコーディングは，講演やセミナーの内容を，テキスト情報に加えて矢印，吹き出し，配置，イラストといった非言語的要素を用いて構造化・可視化する表現技法であり，情報共有や理解促進の手法として広く活用されている．
+                      一方で，このような非言語的要素が，生成AIによる内容理解や推論においてどの程度寄与しているのかは，十分に明らかにされていない．
+                      本研究では，グラフィックレコーディングに含まれる非言語的要素を，意味解釈に関与する構成要素として捉え，それらを段階的に除去するアブレーションスタディを設計する．具体的には，矢印や配置関係，吹き出しといった要素を部分的に削除・簡略化した入力を用意し，生成AIの出力結果の変化を比較・分析することで，どの情報に依存して内容理解が行われているのかを評価する．
+                      本研究の特徴は，新たなモデルを提案することではなく，評価設定と実験設計そのものを通じて，生成AIの理解の前提や限界を明らかにする点にある。グラフィックレコーディングという，人間にとっては直感的である一方，構造的・非言語的要素を多く含む表現を対象とすることで，生成AIの意味理解がどの程度構造情報を利用しているのかを明確にすることを目的とする．
+                    </p>
+                  </div>
+
+                  <div class="research-media">
+                    <img
+                      class="research-photo research-photo--large"
+                      src="img/grareco.png"
+                      alt="グラレコ例"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="research-item" data-acc>
+              <button class="research-head" type="button" data-acc-btn>
+                <div class="research-item-title">
+                  学部研究：赤外線映像と3D-CNNを用いたジェスチャ認識モデルと非接触ユーザインターフェースの開発
+                </div>
+                <div class="research-item-desc">
+                  赤外線センサ入力をもとに、時系列特徴を学習する3D-CNNでジェスチャを認識しUIに接続しました。
+                </div>
+              </button>
+
+              <div class="research-detail" data-acc-panel>
+                <div class="research-two-col">
+                  <div class="research-text">
+                    <p>
+                      <strong>
+                        赤外線センサから得られる時系列入力を用いて、3D-CNNでジェスチャを認識するモデルを構築
+                      </strong>
+                    </p>
+                    <p>
+                      近年，感染症対策やユニバーサルデザインの観点から，身体接触を伴わないユーザインターフェースへの需要が高まっている．従来のRGBカメラを用いたジェスチャ認識手法は，照明条件やプライバシーの問題に影響されやすいという課題がある．
+                      本研究では，赤外線センサによって取得される時系列映像データに着目し，環境光の影響を受けにくいジェスチャ認識手法の構築を目指した．入力データには赤外線映像の連続フレームを用い，空間情報と時間情報を同時に学習可能な3D-CNNを用いてジェスチャ認識モデルを設計・実装した．
+                      学習したモデルを用いて複数種類のジェスチャを認識し，時系列情報を考慮しない手法との比較を行った結果，動作の変化を含めた認識において有効性を確認した．また，認識結果を入力として利用することで，非接触操作を可能とするユーザインターフェースのプロトタイプを構築し，実応用を想定した検証を行った．
+                      本研究は，センサ選択からモデル設計，応用システムの実装までを一貫して行い，実世界で利用可能な非接触インターフェースの可能性を示した点に特徴がある．
+                    </p>
+                  </div>
+
+                  <div class="research-media">
+                    <img
+                      class="research-photo research-photo--large"
+                      src="img/gesture.JPG"
+                      alt="ジェスチャ研究"
+                      loading="lazy"
+                    />
+                    <img
+                      class="research-photo"
+                      src="img/gesture2.png"
+                      alt="ジェスチャ研究（別カット）"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Slide 4 : Research -->
+      <section class="slide" id="research">
+        <div class="card">
+          <h2 class="section-title">Research</h2>
+
+          <div class="research-list">
+            <!-- 修士研究 -->
+            <div class="research-item" data-acc>
+              <button class="research-head" type="button" data-acc-btn>
+                <div class="research-item-title">
+                  修士研究：生成AIにおけるグラフィックレコーディングの「非言語情報の解釈能力」評価
+                </div>
+
+                <div class="research-item-desc">
+                  矢印・囲み・配置・アイコンなどの非言語要素に注目し，それらが生成AIの理解にどう影響しうるかを，
+                  アブレーションを用いた評価設計で切り分ける．
+                </div>
+
+                <!-- 追加：進捗を明示（誤解防止） -->
+                <div class="research-item-meta">
+                  <span class="chip">Study design</span>
+                  <span class="chip">Ablation</span>
+                  <span class="chip">Nonverbal elements</span>
+                  <span class="chip">Generative AI evaluation</span>
+                </div>
+              </button>
+
+              <div class="research-detail" data-acc-panel>
+                <div class="research-two-col research-two-col--focus-media">
+                  <div class="research-text">
+                    <!-- 追加：研究の問い（最短で飲み込める） -->
+                    <p class="lead">
+                      研究の問い：グラレコの非言語要素（矢印・囲み・配置など）は，生成AIの「説明の一貫性」「因果の把握」
+                      「話題のまとまり」にどの程度影響しうるか？
+                      <span class="muted"
+                        >（現在は検証計画と評価計画を進行中）</span
+                      >
+                    </p>
+
+                    <div class="chips">
+                      <span class="chip">グラフィックレコーディング</span>
+                      <span class="chip">画像理解</span>
+                      <span class="chip">アブレーション</span>
+                      <span class="chip">非言語要素</span>
+                      <span class="chip">生成AI</span>
+                    </div>
+
+                    <div class="flow" aria-label="master-research-flow">
+                      <div class="node">
+                        <div class="bubble">入力</div>
+                        <div class="cap">グラレコ画像</div>
+                      </div>
+                      <div class="connector" aria-hidden="true">
+                        <span class="line"></span><span class="head"></span>
+                      </div>
+                      <div class="node">
+                        <div class="bubble">分解</div>
+                        <div class="cap">矢印/囲み/配置…</div>
+                      </div>
+                      <div class="connector" aria-hidden="true">
+                        <span class="line"></span><span class="head"></span>
+                      </div>
+                      <div class="node">
+                        <div class="bubble bubble--sm">アブレーション</div>
+                        <div class="cap">要素を段階的に除去</div>
+                      </div>
+                      <div class="connector" aria-hidden="true">
+                        <span class="line"></span><span class="head"></span>
+                      </div>
+                      <div class="node">
+                        <div class="bubble">推論</div>
+                        <div class="cap">生成AIへ入力</div>
+                      </div>
+                      <div class="connector" aria-hidden="true">
+                        <span class="line"></span><span class="head"></span>
+                      </div>
+                      <div class="node">
+                        <div class="bubble">評価<br />設計</div>
+                        <div class="cap">出力比較の観点を定義</div>
+                      </div>
+                    </div>
+
+                    <div class="kv">
+                      <div class="kv-box">
+                        <div class="kv-h">観察観点（見たいこと）</div>
+                        <ul class="mini-ul">
+                          <li>
+                            矢印/配置を除くと，「説明」や「因果」の把握が崩れやすいか
+                          </li>
+                          <li>
+                            吹き出し・囲みを除くと，「話題のまとまり」が崩れやすいか
+                          </li>
+                          <li>
+                            どの要素がどの種類の理解に関係しうるかを，条件比較で整理する
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="kv-box">
+                        <div class="kv-h">設計方針（立ち位置）</div>
+                        <ul class="mini-ul">
+                          <li>
+                            生成AIの前提・限界を，入力条件の違いで比較し評価する
+                          </li>
+                          <li>グラレコ研究における基盤を整備する</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <details class="details">
+                      <summary>詳細（背景・ねらい）</summary>
+                      <p>
+                        グラフィックレコーディングは，テキストに加えて矢印・吹き出し・配置・イラスト等で情報を構造化します．
+                        一方で，生成AIがこれらの非言語情報をどの程度手がかりとして使っているかは整理されていません．
+                        本研究では，要素を段階的に除去した入力条件を用意し，
+                        出力の違いを比較できる評価プロトコルを設計して，寄与の可能性を切り分けます．
+                      </p>
+                    </details>
+                  </div>
+
+                  <div class="research-media">
+                    <img
+                      class="research-photo research-photo--large"
+                      src="img/grareco.png"
+                      alt="グラレコ例"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 学部研究 -->
+            <div class="research-item" data-acc>
+              <button class="research-head" type="button" data-acc-btn>
+                <div class="research-item-title">
+                  学部研究：赤外線映像 × 3D-CNN によるジェスチャ認識と非接触UI
+                </div>
+                <div class="research-item-desc">
+                  低解像度の赤外線映像（32×24）から6種類の手の動きを認識し，仮想カーソル操作に接続しました．
+                </div>
+                <div class="research-item-meta">
+                  <span class="chip">Gesture recognition</span>
+                  <span class="chip">3D-CNN</span>
+                  <span class="chip">Hand</span>
+                  <span class="chip">Machine Learning</span>
+                </div>
+              </button>
+
+              <div class="research-detail" data-acc-panel>
+                <div class="research-two-col">
+                  <!-- Left -->
+                  <div class="research-text">
+                    <!-- 3行サマリ（結論先出し） -->
+                    <p class="lead">
+                      <strong>目的：</strong
+                      >照明の影響を受けにくい赤外線映像で，非接触ジェスチャ操作を実現する．<br />
+                      <strong>方法：</strong>連続フレームを 3D-CNN
+                      に入力し，6クラス分類で推論する．<br />
+                      <strong>応用：</strong
+                      >推論結果を仮想マウスカーソルの操作に変換する．
+                    </p>
+
+                    <div class="chips">
+                      <span class="chip">赤外線</span>
+                      <span class="chip">32×24</span>
+                      <span class="chip">時系列</span>
+                      <span class="chip">3D-CNN</span>
+                      <span class="chip">6クラス</span>
+                      <span class="chip">リアルタイムUI</span>
+                    </div>
+
+                    <!-- KPI（ぱっと理解できる塊） -->
+                    <strong>実験結果：</strong>
+                    <div class="kpis" aria-label="undergrad-kpis">
+                      <div class="kpi">
+                        <div class="kpi-k">Best</div>
+                        <div class="kpi-v">4 frames (nk=2)</div>
+                      </div>
+                      <div class="kpi">
+                        <div class="kpi-k">Accuracy</div>
+                        <div class="kpi-v">0.965</div>
+                      </div>
+                      <div class="kpi">
+                        <div class="kpi-k">F1</div>
+                        <div class="kpi-v">0.912</div>
+                      </div>
+                      <div class="kpi">
+                        <div class="kpi-k">Precision</div>
+                        <div class="kpi-v">0.928</div>
+                      </div>
+                      <div class="kpi">
+                        <div class="kpi-k">Recall</div>
+                        <div class="kpi-v">0.896</div>
+                      </div>
+                    </div>
+
+                    <!-- Flow（要約として短く） -->
+                    <div class="flow" aria-label="undergrad-research-flow">
+                      <div class="node">
+                        <div class="bubble">入力</div>
+                        <div class="cap">赤外線映像</div>
+                      </div>
+                      <div class="connector" aria-hidden="true">
+                        <span class="line"></span><span class="head"></span>
+                      </div>
+                      <div class="node">
+                        <div class="bubble">学習</div>
+                        <div class="cap">3D-CNN</div>
+                      </div>
+                      <div class="connector" aria-hidden="true">
+                        <span class="line"></span><span class="head"></span>
+                      </div>
+                      <div class="node">
+                        <div class="bubble">推論</div>
+                        <div class="cap">6クラス分類</div>
+                      </div>
+                      <div class="connector" aria-hidden="true">
+                        <span class="line"></span><span class="head"></span>
+                      </div>
+                      <div class="node">
+                        <div class="bubble">応用</div>
+                        <div class="cap">仮想カーソル</div>
+                      </div>
+                    </div>
+
+                    <!-- “やったこと / 得られたこと” を2カラムでチャンク化 -->
+                    <div class="kv">
+                      <div class="kv-box">
+                        <div class="kv-h">やったこと</div>
+                        <ul class="mini-ul">
+                          <li>
+                            6種類（4方向 + OK + No
+                            action）のジェスチャデータ作成
+                          </li>
+                          <li>
+                            3/4/5フレーム入力とカーネル値の条件を変えて比較
+                          </li>
+                          <li>
+                            最新4フレームでリアルタイム推論 → UI操作へ接続
+                          </li>
+                          <li>ユーザドリブンを考慮した設計</li>
+                        </ul>
+                      </div>
+
+                      <div class="kv-box">
+                        <div class="kv-h">結果・学び</div>
+                        <ul class="mini-ul">
+                          <li>
+                            4フレームは精度と計算負荷のバランスが良く，リアルタイム向き
+                          </li>
+                          <li>
+                            OKサイン時にカーソルの見た目を変えるなど，操作のフィードバックを設計
+                          </li>
+                          <li>
+                            課題：レスポンス/負荷，他ユーザ評価，体温による誤認識
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <details class="details">
+                      <summary>詳細（実装・評価の補足）</summary>
+                      <p>
+                        実験では入力フレーム数（3/4/5）とカーネル値を変えて比較し，
+                        リアルタイム実装では常に最新の4フレームを用いて推論し，結果に応じて仮想カーソルを動作させました．
+                      </p>
+                    </details>
+                  </div>
+
+                  <!-- Right -->
+                  <div class="research-media">
+                    <div class="media-stack">
+                      <img
+                        class="research-photo"
+                        src="img/gesture.JPG"
+                        alt="ジェスチャ操作（赤外線計測）"
+                        loading="lazy"
+                      />
+                      <img
+                        class="research-photo"
+                        src="img/gesture2.png"
+                        alt="装置俯瞰（センサと範囲）"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 6 -->
+      <!-- <section class="slide" id="build">
+        <div class="grid-2">
+          <div
+            class="panel image"
+            style="background-image: url('img/loadcell.JPG')"
+          ></div>
+
+          <div class="panel light">
+            <div class="card">
+              <h2>開発：ペット用・重量センサ通知（ESP32）</h2>
+
+              <p>
+                M5StickC（ESP32）とロードセル（HX711）を用いて、ペット用の水皿に残っている水の重量を計測し、
+                その結果をバックエンドに送信・通知する IoT
+                デバイスを開発しました。
+                ペットの水分摂取量は健康管理に直結する一方で、日常的に正確な把握を行うことは難しいという課題があります。
+                本開発では「水の摂取量」と「水の残量」を定量的に把握し、飼い主に分かりやすく伝えることを目的としました。
+              </p>
+
+              <p>
+                グループ開発の中で、私は主にハードウェアおよび通信部分の設計・実装を担当しました。
+                具体的には、ロードセルによる重量計測回路の構成、ESP32上での重量データ取得処理、
+                およびWi-Fi通信を用いたバックエンドへのデータ送信を実装しています。
+              </p>
+
+              <p>
+                また、実際の利用環境を想定し、ESP32を一度 SoftAP
+                モードで起動して設定を行い、 その後 STA
+                モードに切り替えてデータ送信を行う構成を採用しました。
+                これにより、Wi-Fi設定やトークン管理を含めた運用を、1つのスケッチ内で完結させています。
+              </p>
+
+              <p>
+                取得した重量データはアプリ側で可視化され、水の残量表示や、
+                水が無くなった際の通知といった機能につなげることを想定しています。
+                今後は、複数のペットに対応した管理や、体重に基づく推奨水分摂取量の算出など、
+                より実用的な健康管理システムへの発展を視野に入れています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Slide : Build -->
+      <section class="slide" id="build">
+        <div class="grid-2 build-grid">
+          <!-- 左：画像（1枚で“実物感”） -->
+          <figure class="build-media">
+            <img
+              src="img/loadcell.JPG"
+              alt="ロードセルとESP32（試作）"
+              loading="lazy"
+            />
+            <figcaption>
+              プロトタイプ（M5StickC + HX711 + ロードセル）
+            </figcaption>
+          </figure>
+
+          <!-- 右：要点（いま作った“見やすいBuild”をここへ） -->
+          <div class="card build-card">
+            <h2 class="section-title build-title">Product</h2>
+            <p class="build-lead">
+              M5StickC（ESP32）+
+              HX711で水皿の重量を計測し，バックエンドへの送信を担当し水量検知アプリの開発をしました．
+            </p>
+
+            <div class="tag-row">
+              <span class="tag">ESP32</span>
+              <span class="tag">HX711</span>
+              <span class="tag">SoftAP→STA</span>
+              <span class="tag">HTTP送信</span>
+              <span class="tag">グループ開発</span>
+            </div>
+
+            <!-- フロー（あなたの現状のものがあるなら、そのまま貼ってOK） -->
+            <div class="flow">
+              <div class="flow-step">
+                <div class="flow-node">計測</div>
+                <div class="flow-sub">ロードセル</div>
+              </div>
+              <div class="flow-arrow">→</div>
+
+              <div class="flow-step">
+                <div class="flow-node">安定化</div>
+                <div class="flow-sub">平均/平滑化</div>
+              </div>
+              <div class="flow-arrow">→</div>
+
+              <div class="flow-step">
+                <div class="flow-node">設定</div>
+                <div class="flow-sub">SoftAPで入力</div>
+              </div>
+              <div class="flow-arrow">→</div>
+
+              <div class="flow-step">
+                <div class="flow-node">送信</div>
+                <div class="flow-sub">STAでAPIへ</div>
+              </div>
+              <div class="flow-arrow">→</div>
+
+              <div class="flow-step">
+                <div class="flow-node">活用</div>
+                <div class="flow-sub">可視化/通知</div>
+              </div>
+            </div>
+
+            <div class="build-two">
+              <div class="mini-card">
+                <h3>担当</h3>
+                <ul>
+                  <li>重量計測回路・データ取得処理（ESP32/HX711）</li>
+                  <li>Wi-Fi設定（SoftAP）と運用フロー設計</li>
+                  <li>バックエンドへのHTTP送信部分</li>
+                </ul>
+              </div>
+
+              <div class="mini-card">
+                <h3>工夫</h3>
+                <ul>
+                  <li>初回はSoftAPで設定し、以後はSTAで自動送信</li>
+                  <li>重量データの平均化・平滑化で安定した計測を実現</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 詳細は折りたたみ（読みたい人だけ） -->
+            <details class="build-details">
+              <summary>詳細（背景・今後）</summary>
+              <p>
+                ペットの水分摂取量は健康管理に直結する一方で，日常的に正確な把握が難しい課題があり，その点を発散させ開発に取り組みました．
+                私は主にハードウェアと通信部分を担当し，ロードセルで重量を計測し，ESP32でデータ取得とWi-Fi通信を実装しました
+                今後は複数ペット対応や，体重に基づく推奨摂取量の提示などへ発展させる予定です．
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <!-- Slide 8 -->
+      <section class="slide" id="intern">
+        <div class="card">
+          <h2 class="section-title">Intern</h2>
+
+          <div class="intern-list">
+            <div class="intern-item" data-acc>
+              <button class="intern-head" type="button" data-acc-btn>
+                <div class="intern-title">
+                  株式会社ファーストリテイリング｜長期インターン（3ヶ月）
+                </div>
+                <div class="intern-desc">
+                  事業課題に対して，AIエージェントによる意思決定支援の設計・実装・改善を担当
+                </div>
+              </button>
+
+              <div class="intern-detail" data-acc-panel>
+                <p class="intern-lead">
+                  需要予測・計画業務などの意思決定を支えるため，情報やロジックを整理し，インサイト提案まで導くAIエージェントの開発に携わりました．
+                </p>
+
+                <div class="intern-grid">
+                  <div class="intern-col">
+                    <h3 class="intern-h">担当</h3>
+                    <ul class="intern-ul">
+                      <li>サプライチェーン領域の業務理解と課題抽出</li>
+                      <li>
+                        システムのプライバシーやセキュリティを保持するエージェント設計
+                      </li>
+                      <li>
+                        意思決定を支援するエージェントのプロンプト設計・実装
+                      </li>
+                      <li>システムロジックの確認</li>
+                    </ul>
+                  </div>
+
+                  <div class="intern-col">
+                    <h3 class="intern-h">実装で意識した点</h3>
+                    <ul class="intern-ul">
+                      <li>再現性：同条件で結果が大きく揺れないよう制御</li>
+                      プロンプトの調整やファンクションモジュールの設計で対応
+                      <li>
+                        協調性:
+                        メンターによるレビュー・フィードバックを反映．壁打ちを重視
+                      </li>
+                      <li>安全性：機密情報の扱い・出力の逸脱抑止</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <p class="intern-note">
+                  チーム開発のため，Gitを使用してコード管理・レビューを実施しました．
+                  また，業務理解のためにヒアリングを行い，専門用語や業務フローを学習しました．
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 10 -->
+      <!-- <section class="slide" id="stack">
+        <div class="card">
+          <h2>技術スタック</h2>
+          <p>
+            Python / JavaScript / Swift / C++、Git/GitHub、API連携、ESP32など。
+          </p>
+        </div>
+      </section> -->
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-close></div>
+
+      <div class="lightbox-panel" role="dialog" aria-modal="true">
+        <button
+          class="lightbox-close"
+          type="button"
+          aria-label="close"
+          data-close
+        >
+          ×
+        </button>
+
+        <div class="lightbox-stage">
+          <button
+            class="lightbox-nav prev"
+            type="button"
+            aria-label="prev"
+            data-prev
+          >
+            ‹
+          </button>
+          <img class="lightbox-img" src="" alt="" />
+          <button
+            class="lightbox-nav next"
+            type="button"
+            aria-label="next"
+            data-next
+          >
+            ›
+          </button>
+        </div>
+
+        <div class="lightbox-meta">
+          <div class="lightbox-caption"></div>
+          <div class="lightbox-counter"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
