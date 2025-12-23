@@ -179,8 +179,10 @@
     const io = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (entry.isIntersecting) build.classList.add("is-inview");
-          else build.classList.remove("is-inview");
+          if (entry.isIntersecting) {
+            build.classList.add("is-inview");
+            io.unobserve(build); // ★ここが重要：1回で終了
+          }
         }
       },
       {

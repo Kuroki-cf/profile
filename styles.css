@@ -1663,6 +1663,23 @@ body.fx #build.slide.is-inview {
   opacity: 0.55;
 }
 
+/* =========================
+   Product / Build layout fix
+   ========================= */
+
+/* 左右を高さ同期させない */
+#build .build-grid {
+  align-items: stretch;
+}
+
+/* 画像は枠にフィット（切り抜き） */
+#build .build-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.03);
+}
+
 /* 背景レイヤは固定・背面 */
 .bg-collage {
   position: fixed;
@@ -2200,4 +2217,53 @@ html[data-scene="build"] {
   width: 100%;
   border-radius: 18px;
   display: block;
+}
+/* =========================
+   Build(Product): 左画像サイズ固定（右の開閉で縮まない）
+   ========================= */
+
+/* 左右を同じ高さにしない（= 右が縮んでも左は縮まない） */
+#build .grid-2 {
+  align-items: start;
+}
+
+/* 画像は「残り高さ」を使って表示（figcaption分を除いた領域に収める） */
+#build .build-media img {
+  flex: 1; /* ← これが重要。画像が可変領域を担当する */
+  height: auto; /* ← height:100% を殺す */
+  min-height: 0; /* ← min-height:420px を殺す */
+  object-fit: cover; /* ← 見た目を大きく保つ（切り抜きあり） */
+  display: block;
+}
+.build-details {
+  margin-top: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  padding: 14px 16px;
+  background: #fcfcfd;
+}
+
+.build-details-title {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+.build-details p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--muted);
+}
+#build .build-media {
+  height: 100%; /* 右カードと同じ高さになる */
+  display: flex;
+}
+
+#build .build-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 重要：切らない */
+  background: rgba(0, 0, 0, 0.03);
 }
